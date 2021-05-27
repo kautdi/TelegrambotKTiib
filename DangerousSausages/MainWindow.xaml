@@ -1,0 +1,26 @@
+﻿<Window x:Class="DangerousSausages.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DangerousSausages"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="198.25" Width="361.865">
+    <Grid Margin="0,0,2,0" Height="161" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="37*"/>
+            <ColumnDefinition Width="86*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="49*"/>
+            <ColumnDefinition Width="81*"/>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="51*"/>
+        </Grid.ColumnDefinitions>
+        <Button  Click="EnterToken" Content="Enter Token" HorizontalAlignment="Left" Margin="21,141,0,0" VerticalAlignment="Top" Width="99" Height="20" Grid.ColumnSpan="2"/>
+        <TextBox x:Name ="TokenText" HorizontalAlignment="Left" Height="40" Margin="21,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" Grid.ColumnSpan="7" TextChanged="TokenText_TextChanged" Text="1647216099:AAEtAoXJraBskAoJ0_tbVJLwYMX54D1xuvo"/>
+        <Label x:Name="TokenLabel"  Content="Input token for bot:" HorizontalAlignment="Left" Margin="21,21,0,0" VerticalAlignment="Top" Grid.ColumnSpan="7" Width="319" Height="34"/>
+        <Button Click="StartBot" Grid.ColumnSpan="3" Content="Start Bot" HorizontalAlignment="Left" VerticalAlignment="Top" Width="99" Grid.Column="4" Margin="23,141,0,0"/>
+
+
+    </Grid>
+</Window>
